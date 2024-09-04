@@ -198,12 +198,12 @@ footer p {
     }
 
     .hero p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .posts {
         grid-template-columns: 1fr;
-        width: 80%;
+        width: 95%;
         margin: 0;
     }
 
@@ -223,6 +223,10 @@ footer p {
 
     .work-text p {
         font-size: 14px;
+    }
+
+    .recent-posts{
+        padding: 10px;
     }
 
     .work-img img {
