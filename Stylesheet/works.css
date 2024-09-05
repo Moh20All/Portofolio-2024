@@ -170,9 +170,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .image-container img {
-    width: 80%;
+    max-width: 80%;
     margin: 20px 0;
 
 }
