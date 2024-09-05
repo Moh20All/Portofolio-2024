@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+*{
+
+}
+body {
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: white;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header li {
+    margin-left: 20px;
+    
+}
+header a:hover {
+    color: #ff6363;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: .3s all;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+/*Blog*/
+.blogs-title{
+    font-size: 44px;
+}
+.date{
+    font-size:18px;
+}
+.date span{
+    color:#8695A4;
+}
+.blogs{
+    max-width: 70%;
+    margin: 10px 15%;
+    color: #21243D;
+}
+.blog-header h1{
+    font-size: 30px;
+}
+
+.blog-body p{
+    font-size: 16px;
+}
+.blog-content{
+    margin: 30px 0;
+    position: relative;
+}
+.blog-content::after{
+    content: "";
+    background-color: #E0E0E0;
+    width:80%;
+    height: 1px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%,-20%);
+
+}
+@media screen and (max-width: 768px) {
+    .blogs{
+        max-width: 90%;
+        margin: 10px 5%;
+
+    }
+}
