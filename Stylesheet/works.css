@@ -118,6 +118,9 @@ footer p {
 }
 @media screen and (max-width: 768px) {
     
+    header{
+        justify-content: center;
+    }
     .featured-works .work {
         flex-direction: column;
         align-items: center;
@@ -140,4 +143,56 @@ footer p {
         width: 100%;
         height: auto;
     }
+}
+main {
+    padding: 50px;
+}
+
+.work-detail h1 {
+    font-size: 36px;
+    color: #21243D;
+}
+
+.tags {
+    color: #8695A4;
+    margin: 10px 0;
+}
+
+.year {
+    background-color: #ff6363;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 80%;
+    margin: 20px 0;
+
+}
+
+.text-section h2, .text-section h3 {
+    color: #21243D;
+}
+
+.text-section p {
+    font-size: 16px;
+    color: #8695A4;
+}
+
+/* Order Summary */
+.order-summary {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.order-summary .price {
+    font-weight: bold;
+    font-size: 24px;
 }
