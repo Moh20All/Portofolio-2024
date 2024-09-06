@@ -167,3 +167,40 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #333;
 }
+@media screen and (max-width: 768px) {
+    .contact-container{
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    .contact-info{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 10px;
+        width: 90%;
+        margin: 0 5%;
+        background-color: transparent;
+        color: black;
+    }
+    .phone-contact{
+        padding: 10px;
+        background-color: #ebd7d7;
+        max-width: 90%;
+        margin: 10px 5%;
+        border-radius: 15px;
+    }
+    .phone-contact-text p{
+        margin: 1px;
+    }
+    .phone-contact-text p:first-child{
+        color: #A6A6A6;
+    }
+    .contact-icon{
+        background-color:#000000 ;
+        padding: 8px 12px;
+        border-radius: 4px;
+    }
+}
