@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url("global.css");
 *{
 
 }
@@ -70,7 +71,7 @@ footer p {
 .work:hover{
     background-color: #dedede;
 }
-.work::after{
+.work::after,main section::after{
     content: "";
     background-color: #E0E0E0;
     width:80%;
@@ -109,13 +110,17 @@ footer p {
     font-weight: 800;
 }
 
-.year{
+.year,.tag{
    color: white;
    font-weight: bold;
    background-color: #142850;
    padding: 1px 10px;
    border-radius: 16px; 
 }
+main section{
+    position: relative;
+}
+
 @media screen and (max-width: 768px) {
     
     header{
@@ -166,6 +171,10 @@ main {
     font-weight: bold;
     margin-right: 10px;
 }
+.tag{
+    background-color: #e2ffeb;
+    color:#14532D;
+}
 .image-container{
     display: flex;
     justify-content: center;
@@ -184,7 +193,7 @@ main {
 
 .text-section p {
     font-size: 16px;
-    color: #8695A4;
+    color: #616161;
 }
 
 /* Order Summary */
