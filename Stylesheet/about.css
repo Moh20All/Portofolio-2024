@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("global.css");
 *{
     font-family: "Heebo", sans-serif;
@@ -55,7 +56,7 @@ footer p {
     margin-top: 10px;
 }
 .container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -64,33 +65,46 @@ footer p {
 }
 
 .about {
-    text-align: center;
     margin-bottom: 40px;
 }
 
 .about h2 {
-    color: #a83366;
+    color: #000000;
     margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+}
+.about h2::after{
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-image: linear-gradient(90deg, #FA5252 9.16%,  #DD2476 64.72%);;
+    position: absolute;
+    bottom: 50%;
+    right: 62%;
 }
 
 .about p {
-    color: #333;
+    color: #272727;
     line-height: 1.8;
+    font-weight: 500;
 }
 
 .services {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 10%;
 }
 
 .service {
-    width: 45%;
+    max-width: 350px;
     background-color: #e8f0ff;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .service h3 {
@@ -117,4 +131,38 @@ footer {
     margin-top: 20px;
     color: #aaa;
     font-size: 14px;
+}
+.languages {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.languages h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;;
+    color: #333;
 }
