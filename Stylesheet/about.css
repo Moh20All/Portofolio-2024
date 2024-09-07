@@ -54,3 +54,67 @@ footer p {
     color: #999;
     margin-top: 10px;
 }
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    color: #a83366;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #333;
+    line-height: 1.8;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    width: 45%;
+    background-color: #e8f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+}
+
+.clients {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.client-logos img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
