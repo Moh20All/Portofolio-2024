@@ -166,3 +166,8 @@ footer {
     font-family: "Montserrat", sans-serif;;
     color: #333;
 }
+@media screen and (max-width: 768px) {
+    .about h2::after{
+        display: none;
+    }
+}
