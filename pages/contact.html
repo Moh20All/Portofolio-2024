@@ -3,112 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Contact Me | Mohamed's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../Stylesheet/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body class="fadeInUp-animation">
     <header>
         <nav>
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="blogs.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="works.html"><i class="fas fa-briefcase"></i> Works</a></li>
+                <li><a href="blogs.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
-    <h1 class="phone-title">Contact Me</h1>
-    <div class="contact-container">
+    
+    <h1 class="page-title animate__animated animate__fadeIn">Get in <span class="highlight">Touch</span></h1>
+    
+    <div class="contact-container animate__animated animate__fadeIn">
         <div class="contact-info">
             <h2>Contact Information</h2>
-            <p>Say something to start a live chat!</p>
+            <p class="info-subtitle">Feel free to reach out and I'll get back to you soon!</p>
             <ul class="info-list">
-                <li><i class="fa-solid fa-phone"></i> +213 671 22 22 27</li>
-                <li><i class="fa-regular fa-envelope"></i> allalimohamedbahaeddine@gmail.com</li>
-                <li><i class="fa-solid fa-location-dot"></i><br> Biskra,Algeria</li>
+                <li class="info-item">
+                    <div class="info-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-text">+213 671 22 22 27</div>
+                </li>
+                <li class="info-item">
+                    <div class="info-icon email-icon"><i class="fa-regular fa-envelope"></i></div>
+                    <div class="info-text">allalimohamedbahaeddine@gmail.com</div>
+                </li>
+                <li class="info-item">
+                    <div class="info-icon location-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-text">Biskra, Algeria</div>
+                </li>
             </ul>
             <div class="social-icons">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-discord"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-discord"></i></a>
             </div>
+            <div class="pattern-bg"></div>
         </div>
         <div class="contact-form">
+            <h2>Send a Message</h2>
             <form action="#">
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" placeholder="John">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" placeholder="+......">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" placeholder="Doe">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="example@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" placeholder="+......">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Select Subject?</label>
+                    <label for="subject">Select Subject</label>
                     <div class="radio-group">
-                        <input type="radio" name="subject" id="subject1" checked>
-                        <label for="subject1">General Inquiry</label>
-                        <input type="radio" name="subject" id="subject2">
-                        <label for="subject2">Support</label>
-                        <input type="radio" name="subject" id="subject3">
-                        <label for="subject3">Feedback</label>
+                        <div class="radio-item">
+                            <input type="radio" name="subject" id="subject1" checked>
+                            <label for="subject1">General Inquiry</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="subject" id="subject2">
+                            <label for="subject2">Support</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="subject" id="subject3">
+                            <label for="subject3">Feedback</label>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" rows="4" placeholder="Write your message.."></textarea>
+                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
     </div>
-    <div class="phone-contact">
-        <div class="contact-info">
-            <div class="contact-icon"><i class="fa-solid fa-phone" style="color: #E93B81;"></i></div>
-            <div class="phone-contact-text">
-                <p>Phone</p>
-                <p>+213 671 22 22 27</p>
+    
+    <div class="contact-cards-section">
+        <h2 class="section-title">Quick Connect</h2>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <div class="card-icon"><i class="fa-solid fa-phone" style="color: #E93B81;"></i></div>
+                <div class="card-content">
+                    <h3>Phone</h3>
+                    <p>+213 671 22 22 27</p>
+                    <a href="tel:+213671222227" class="card-link">Call Now</a>
+                </div>
             </div>
-        </div>
-        <div class="contact-info">
-            <div class="contact-icon"><i class="fa-solid fa-envelope-open " style="color: #6AB5B9;"  ></i></div>
-            <div class="phone-contact-text">
-                <p>E-mail</p>
-                <p>allali@gmail.com</p>
+            <div class="contact-card">
+                <div class="card-icon"><i class="fa-solid fa-envelope-open" style="color: #6AB5B9;"></i></div>
+                <div class="card-content">
+                    <h3>Email</h3>
+                    <p>allali@gmail.com</p>
+                    <a href="mailto:allali@gmail.com" class="card-link">Send Email</a>
+                </div>
             </div>
-        </div>
-        <div class="contact-info">
-            <div class="contact-icon"><i class="fa-solid fa-location-dot" style="color: #FD7590;"></i></div>
-            <div class="phone-contact-text">
-                <p>Location</p>
-                <p>Biskra,algeria</p>
+            <div class="contact-card">
+                <div class="card-icon"><i class="fa-solid fa-location-dot" style="color: #FD7590;"></i></div>
+                <div class="card-content">
+                    <h3>Location</h3>
+                    <p>Biskra, Algeria</p>
+                    <a href="https://maps.google.com" target="_blank" class="card-link">View on Map</a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- HTML !-->
-<button class="button-36" role="button">Download Cv</button>
-
+    
+    <div class="cta-section">
+        <a href="../Assets/cv.pdf" download class="download-btn">Download CV <i class="fas fa-download"></i></a>
+    </div>
 
     <footer>
         <div class="social-links">
-            <div class="social-icon"><a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #21243D;"></i></a></div>
-            <div class="social-icon"><a target="_blank" href="https://www.instagram.com/moh.jsx/"><i class="fa-brands fa-instagram fa-2xl" style="color: #21243D;"></i></a></div>
-            <div class="social-icon"><a href=""><i class="fa-brands fa-twitter fa-2xl" style="color: #21243D;"></i></a></div>
-            <div class="social-icon"><a href=""><i class="fa-brands fa-linkedin fa-2xl" style="color: #21243D;"></i></a></div>
-            
-            
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="https://www.instagram.com/moh.jsx/" class="social-icon"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </div>
-        <p>Copyright ©2024 All rights reserved</p>
+        <p>&copy; Copyright 2024 All rights reserved | Made with <i class="fas fa-heart" style="color:#ff6363;"></i> by Mohamed</p>
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation for form elements
+            const formGroups = document.querySelectorAll('.form-group');
+            formGroups.forEach((group, index) => {
+                setTimeout(() => {
+                    group.classList.add('form-animate');
+                }, index * 100);
+            });
+            
+            // Simple form validation
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formElements = form.elements;
+                let isValid = true;
+                
+                for(let i = 0; i < formElements.length; i++) {
+                    if(formElements[i].type !== 'submit' && formElements[i].type !== 'radio') {
+                        if(formElements[i].value.trim() === '') {
+                            formElements[i].classList.add('error');
+                            isValid = false;
+                        } else {
+                            formElements[i].classList.remove('error');
+                        }
+                    }
+                }
+                
+                if(isValid) {
+                    alert('Message sent successfully!');
+                    form.reset();
+                } else {
+                    alert('Please fill in all required fields');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

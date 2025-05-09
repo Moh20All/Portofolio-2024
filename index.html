@@ -6,78 +6,78 @@
     <title>Moh dev</title>
     <link rel="stylesheet" href="Stylesheet/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body class="fadeInUp-animation">
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>                
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/works.html">Works</a></li>
-                <li><a href="pages/blogs.html">Blog</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>                
+                <li><a href="pages/about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="pages/works.html"><i class="fas fa-briefcase"></i> Works</a></li>
+                <li><a href="pages/blogs.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="pages/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero animate__animated animate__fadeIn">
         <div class="hero-text">
-            <h1>Hi, I am Mohamed, <br> Creative Technologist</h1>
-            <p>full-stack developer known for crafting seamless web applications,android apps and softwares
+            <h1 class="animate__animated animate__slideInLeft">Hi, I am Mohamed, <br> <span class="highlight">Creative Technologist</span></h1>
+            <p class="animate__animated animate__slideInLeft animate__delay-1s">Full-stack developer known for crafting seamless web applications, android apps and softwares
                 with a focus on clean code and user-centric design.</p>
-            <a href="Assets/cv.pdf" target="_blank" class="btn"><i class="fa-regular fa-file"></i> Download Resume</a>
+            <a href="Assets/cv.pdf" target="_blank" class="btn pulse-animation"><i class="fa-regular fa-file"></i> Download Resume</a>
         </div>
-        <div class="hero-image">
-            <img src="Assets/pfp.jpg" alt="John's Profile Picture">
+        <div class="hero-image animate__animated animate__zoomIn">
+            <img src="Assets/pfp.jpg" alt="Mohamed's Profile Picture" class="profile-img">
         </div>
     </section>
 
-    <section class="recent-posts">
-        <div style="display: flex; justify-content: space-between;"><h2>Recent posts</h2> <a style="text-decoration: none; color: #00A8CC; margin-right: 40px;font-size: 16px;" href="pages/blogs.html">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+    <section class="recent-posts animate__animated animate__fadeIn">
+        <div style="display: flex; justify-content: space-between; align-items: center;"><h2><i class="fas fa-newspaper"></i> Recent posts</h2> <a class="view-all" href="pages/blogs.html">view all <i class="fa-solid fa-arrow-right"></i></a></div>
         <div class="posts">
-            <div class="post">
+            <div class="post hover-effect">
                 <h3>React Js from scratch</h3>
-                <p class="date">12 Dec 2023 &nbsp;&nbsp;|&nbsp;&nbsp; Research, Pattern</p>
+                <p class="date"><i class="far fa-calendar-alt"></i> 12 Dec 2023 &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fas fa-tag"></i> Research, Pattern</p>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                <a href="#" class="read-more">Read more <i class="fas fa-chevron-right"></i></a>
             </div>
-            <div class="post">
+            <div class="post hover-effect">
                 <h3>Creating pixel perfect icons in Figma</h3>
-                <p class="date">12 Feb 2020 | Figma, Icon Design</p>
+                <p class="date"><i class="far fa-calendar-alt"></i> 12 Feb 2020 &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fas fa-tag"></i> Figma, Icon Design</p>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                <a href="#" class="read-more">Read more <i class="fas fa-chevron-right"></i></a>
             </div>
         </div>
     </section>
 
-    <section class="featured-works">
-        <div style="display: flex; justify-content: space-between;"><h2>Featured works</h2> <a style="text-decoration: none; color: #00A8CC; margin-right: 40px;font-size: 16px;" href="pages/works.html">view all <i class="fa-solid fa-arrow-right"></i></a></div>
-        <div  class="works">
-            <a href="pages/works/work1.html">
-                <div class="work">
-                    <div class="work-img"><img src="Assets/Gym.png" alt="Designing Dashboards"></div>
+    <section class="featured-works animate__animated animate__fadeIn">
+        <div style="display: flex; justify-content: space-between; align-items: center;"><h2><i class="fas fa-star"></i> Featured works</h2> <a class="view-all" href="pages/works.html">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="works">
+            <a href="pages/works/work1.html" class="work-link">
+                <div class="work hover-effect">
+                    <div class="work-img"><img src="Assets/Gym.png" alt="Designing Dashboards" class="work-image"></div>
                     <div class="work-text">
-                        <h3><a href="pages/works/work1.html">Gym Managment System</a></h3>
-                        <span><span class="year">2024</span> Dashboard</span>
+                        <h3><a href="pages/works/work1.html">Gym Management System</a></h3>
+                        <span><span class="year">2024</span> <i class="fas fa-th-large"></i> Dashboard</span>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-    
                     </div>
                 </div>
             </a>
-            <div class="work">
-                <div class="work-img"><img src="Assets/ecommerce.PNG" alt="Designing Dashboards"></div>
+            <div class="work hover-effect">
+                <div class="work-img"><img src="Assets/ecommerce.PNG" alt="Designing Dashboards" class="work-image"></div>
                 <div class="work-text">
-                    <h3><a href="">Online Store with Admin Management</a></h3>
-                    <span><span class="year">2023</span> E-commerce</span>
+                    <h3><a href="#">Online Store with Admin Management</a></h3>
+                    <span><span class="year">2023</span> <i class="fas fa-shopping-cart"></i> E-commerce</span>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
                 </div>
             </div>
-            <div class="work">
-                <div class="work-img"><img src="Assets/todo.png" alt="Designing Dashboards"></div>
+            <div class="work hover-effect">
+                <div class="work-img"><img src="Assets/todo.png" alt="Designing Dashboards" class="work-image"></div>
                 <div class="work-text">
-                    <h3><a href="">Todo List</a></h3>
-                    <span><span class="year">2023</span> Management</span>
+                    <h3><a href="#">Todo List</a></h3>
+                    <span><span class="year">2023</span> <i class="fas fa-tasks"></i> Management</span>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
                 </div>
             </div>
         </div>
@@ -85,12 +85,36 @@
 
     <footer>
         <div class="social-links">
-            <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #21243D;"></i></a>
-            <a href="https://www.instagram.com/moh.jsx/"><i class="fa-brands fa-instagram fa-2xl" style="color: #21243D;"></i></a>
-            <a href=""><i class="fa-brands fa-twitter fa-2xl" style="color: #21243D;"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin fa-2xl" style="color: #21243D;"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="https://www.instagram.com/moh.jsx/" class="social-icon"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </div>
-        <p>Copyright ©2024 All rights reserved</p>
+        <p>&copy; Copyright 2024 All rights reserved | Made with <i class="fas fa-heart" style="color:#ff6363;"></i> by Mohamed</p>
     </footer>
+
+    <script>
+        // Simple animation for elements when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            
+            const observerOptions = {
+                threshold: 0.25
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>

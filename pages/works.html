@@ -3,94 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Js from Scratch</title> <!-- Post title -->
+    <title>My Projects | Mohamed's Portfolio</title>
     <link rel="stylesheet" href="../Stylesheet/works.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body class="fadeInUp-animation">
     <header>
         <nav>
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="blogs.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="works.html" class="active"><i class="fas fa-briefcase"></i> Works</a></li>
+                <li><a href="blogs.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="featured-works">
-        <h1>works</h1>
-        <div  class="works">
-            <a href="works/work1.html">
-                <div class="work">
-                    <div class="work-img"><img src="../Assets/Gym.png" alt="Designing Dashboards"></div>
-                    <div class="work-text">
-                        <h3><a href="works/work1.html">Gym Managment System</a></h3>
-                        <span><span class="year">2024</span> Dashboard</span>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-    
+    <section class="portfolio-header animate__animated animate__fadeIn">
+        <h1 class="page-title">My <span class="highlight">Projects</span></h1>
+        <p class="subtitle">A collection of my works and projects that showcase my skills and experience</p>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+            <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            <button class="filter-btn" data-filter="management">Management</button>
+            <button class="filter-btn" data-filter="agency">Agency</button>
+            <button class="filter-btn" data-filter="info">Info</button>
+        </div>
+    </section>
+
+    <section class="featured-works animate__animated animate__fadeIn">
+        <div class="works">
+            <div class="work-card" data-category="dashboard">
+                <a href="works/work1.html" class="work-link">
+                    <div class="work">
+                        <div class="work-img">
+                            <img src="../Assets/Gym.png" alt="Gym Management System">
+                            <div class="overlay">
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="work-text">
+                            <h3>Gym Management System</h3>
+                            <div class="work-tags">
+                                <span class="year">2024</span>
+                                <span class="category"><i class="fas fa-th-large"></i> Dashboard</span>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="tech-stack">
+                                <span class="tech">React</span>
+                                <span class="tech">Node.js</span>
+                                <span class="tech">MongoDB</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
             
-            <div class="work">
-                <div class="work-img"><a href="works/work2.html"><img src="../Assets/ecommerce.PNG" alt="Designing Dashboards"></a></div>
-                <div class="work-text">
-                    <h3><a href="works/work2.html">Online Store with Admin Management</a></h3>
-                    <span><span class="year">2023</span> E-commerce</span>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </div>
+            <div class="work-card" data-category="ecommerce">
+                <a href="works/work2.html" class="work-link">
+                    <div class="work">
+                        <div class="work-img">
+                            <img src="../Assets/ecommerce.PNG" alt="Online Store with Admin Management">
+                            <div class="overlay">
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="work-text">
+                            <h3>Online Store with Admin Management</h3>
+                            <div class="work-tags">
+                                <span class="year">2023</span>
+                                <span class="category"><i class="fas fa-shopping-cart"></i> E-commerce</span>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="tech-stack">
+                                <span class="tech">JavaScript</span>
+                                <span class="tech">PHP</span>
+                                <span class="tech">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="work">
-                <div class="work-img"><a href="works/work3.html"><img src="../Assets/todo.png" alt="Designing Dashboards"></a></div>
-                <div class="work-text">
-                    <h3><a href="works/work3.html">Todo List</a></h3>
-                    <span><span class="year">2023</span> Management</span>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </div>
+            
+            <div class="work-card" data-category="management">
+                <a href="works/work3.html" class="work-link">
+                    <div class="work">
+                        <div class="work-img">
+                            <img src="../Assets/todo.png" alt="Todo List">
+                            <div class="overlay">
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="work-text">
+                            <h3>Todo List</h3>
+                            <div class="work-tags">
+                                <span class="year">2023</span>
+                                <span class="category"><i class="fas fa-tasks"></i> Management</span>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="tech-stack">
+                                <span class="tech">HTML</span>
+                                <span class="tech">CSS</span>
+                                <span class="tech">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="work">
-                <div class="work-img"><a href="works/work4.html"><img src="../Assets/mint.png" alt="Designing Dashboards"></a></div>
-                <div class="work-text">
-                    <h3><a href="works/work4.html">Mint Agency</a></h3>
-                    <span><span class="year">2022</span> Agency</span>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </div>
+            
+            <div class="work-card" data-category="agency">
+                <a href="works/work4.html" class="work-link">
+                    <div class="work">
+                        <div class="work-img">
+                            <img src="../Assets/mint.png" alt="Mint Agency">
+                            <div class="overlay">
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="work-text">
+                            <h3>Mint Agency</h3>
+                            <div class="work-tags">
+                                <span class="year">2022</span>
+                                <span class="category"><i class="fas fa-building"></i> Agency</span>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="tech-stack">
+                                <span class="tech">WordPress</span>
+                                <span class="tech">CSS</span>
+                                <span class="tech">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="work">
-                <div class="work-img"><a href="works/work5.html"><img src="../Assets/bcs.jpg" alt="Designing Dashboards"></a></div>
-                <div class="work-text">
-                    <h3><a href="works/work5.html">BB/BCS</a></h3>
-                    <span><span class="year">2022</span> Info</span>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </div>
+            
+            <div class="work-card" data-category="info">
+                <a href="works/work5.html" class="work-link">
+                    <div class="work">
+                        <div class="work-img">
+                            <img src="../Assets/bcs.jpg" alt="BB/BCS">
+                            <div class="overlay">
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="work-text">
+                            <h3>BB/BCS</h3>
+                            <div class="work-tags">
+                                <span class="year">2022</span>
+                                <span class="category"><i class="fas fa-info-circle"></i> Info</span>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="tech-stack">
+                                <span class="tech">React</span>
+                                <span class="tech">API</span>
+                                <span class="tech">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="work">
-                <div class="work-img"><a href="works/work6.html"><img src="../Assets/bike.png" alt="Designing Dashboards"></a></div>
-                <div class="work-text">
-                    <h3><a href="works/work6.html">BB/BCS</a></h3>
-                    <span><span class="year">2023</span> Info</span>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </div>
+            
+            <div class="work-card" data-category="info">
+                <a href="works/work6.html" class="work-link">
+                    <div class="work">
+                        <div class="work-img">
+                            <img src="../Assets/bike.png" alt="Bike Shop">
+                            <div class="overlay">
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="work-text">
+                            <h3>Bike Shop</h3>
+                            <div class="work-tags">
+                                <span class="year">2023</span>
+                                <span class="category"><i class="fas fa-bicycle"></i> E-commerce</span>
+                            </div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="tech-stack">
+                                <span class="tech">HTML</span>
+                                <span class="tech">CSS</span>
+                                <span class="tech">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="social-links">
-            <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #21243D;"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #21243D;"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #21243D;"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #21243D;"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </div>
-        <p>Copyright ©2024 All rights reserved</p>
+        <p>&copy; Copyright 2024 All rights reserved | Made with <i class="fas fa-heart" style="color:#ff6363;"></i> by Mohamed</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const workCards = document.querySelectorAll('.work-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const filter = button.getAttribute('data-filter');
+                    
+                    workCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = 1;
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = 0;
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Animation on scroll
+            const observerOptions = {
+                threshold: 0.25
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            workCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
 </body>
 </html>
